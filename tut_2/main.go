@@ -1,4 +1,5 @@
 // Conditional Statements (If-else)
+// Switch Cases
 package main
 
 import "fmt"
@@ -16,9 +17,21 @@ func main() {
 
 	// We can initialize and add condition in the if block only
 	if var_3 := 30; var_3 > 20 {
-		fmt.Printf("Value of var_3 is %d", var_3)
+		fmt.Printf("Value of var_3 is %d\n", var_3)
 	}
 	// Here we cant use the var_3 because it is only defined for the if block
 	// fmt.Printf("Value of var_3 is %d", var_3)
 
+	var_3 := 30
+	switch var_3 {
+	case 10:
+		fmt.Println("Its value is 10")
+	case 20:
+		fmt.Println("Its value is 20")
+	case 30:
+		fmt.Println("Its value is 30")
+	default:
+		fmt.Println("Its value is not valid")
+
+	}
 }
